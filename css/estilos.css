@@ -1,6 +1,6 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-body { font-family: 'Catamaran', sans-serif; background-color: #f7f8f9; letter-spacing: .05em; overflow-x: hidden; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased !important; font-smoothing: antialiased !important; color: #576660; }
+body { font-family: 'Catamaran', sans-serif; background-color: #f7f8f9; letter-spacing: .05em; overflow-x: hidden; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased !important; font-smoothing: antialiased !important; color: #555; font-weight: normal; }
 
 h1 { display: table; color: #576660; font-size: 35px; text-transform: uppercase; position: relative; margin-bottom: 20px; }
 h1:before { content: ""; width: 90px; height: 5px; background-color: #07a8c2; display: block; position: absolute; right: -45px; bottom: 0; }
@@ -8,7 +8,7 @@ h2 { font-size: 30px; color: #576660; text-align: center; }
 h3 { font-size: 20px; color: #07a8c2; text-transform: uppercase; font-weight: bold; letter-spacing: -.02em; }
 h4 { font-size: 20px; text-transform: uppercase; padding-left: 20px; border-left: 5px solid #07a8c2; }
 
-p { font-size: 14px; color: #576660; }
+p { font-size: 15px; color: black; }
 
 a { text-decoration: none; color: #07a8c2; }
 a:hover { text-decoration: underline; }
@@ -25,7 +25,7 @@ ul,li,ol { list-style: none; }
 .logo { display: table; margin: 0 auto 78px; }
 
 form { width: 100%; }
-input[type="text"], input[type="password"],  input[type="email"], textarea, select { width: 100%; padding: 15px; box-sizing: border-box; background-color: #f7f8f9; border: 1px solid #ccc; margin-bottom: 15px; font-family: 'Catamaran', sans-serif; font-size: 14px; color: #576660; -webkit-appearance: none; -moz-appearance: none; appearance: none; border-radius: 0px; box-sizing: border-box; }
+input[type="text"], input[type="password"], input[type="email"], input[type="date"], textarea, select { width: 100%; padding: 15px; box-sizing: border-box; background-color: #f7f8f9; border: 1px solid #ccc; margin-bottom: 15px; font-family: 'Catamaran', sans-serif; font-size: 14px; color: #576660; -webkit-appearance: none; -moz-appearance: none; appearance: none; border-radius: 0px; box-sizing: border-box; }
 form .field-wrap { width: 100%; }
 .half input, .half select { width: 49%; }
 .half input[type="radio"] { width: 25px; float: left; }
@@ -124,7 +124,7 @@ select.count { width: auto; margin: 0 10px 0 0; padding: 5px 10px; background-co
 
 .sprited { background-image: url('../img/sprite.png'); background-repeat: no-repeat; }
 
-.ico-upload { width: 20px; height: 20px; background-position: 0 0; display: inline-block; margin-right: 5px; }
+.ico-upload { width: 20px; height: 20px; background-position: 0 0; display: inline-block; margin-right: 5px; transform: translate(0, 3px); -moz-transform: translate(0, 3px); -webkit-transform: translate(0, 3px); -o-transform: translate(0, 3px); -ms-transform: translate(0, 3px); }
 .ico-add { width: 20px; height: 20px; background-position: 0 -20px; display: inline-block; margin-right: 5px; }
 .ico-edit { width: 20px; height: 20px; background-position: 0 -40px; display: block; float: left; margin-right: 5px; }
 .ico-view { width: 20px; height: 20px; background-position: 0 -60px; display: inline-block; margin-right: 5px; }
@@ -167,7 +167,7 @@ select.count { width: auto; margin: 0 10px 0 0; padding: 5px 10px; background-co
 .price .cents { float: left; font-size: 18px; }
 
 .table .tbody .row { padding: 15px 0; transition: all .4s ease 0s; position: relative; }
-.table .tbody input, .table .tbody select { width: 70%; padding: 6px; box-sizing: border-box; text-transform: uppercase; font-size: 12px; color: #576660; border: 1px solid transparent; display: table; margin: 0 auto; text-align: center; background-color: transparent; position: relative; }
+.table .tbody input, .table .tbody select { width: 70%; padding: 6px; box-sizing: border-box; text-transform: uppercase; font-size: 13px; color: #576660; border: 1px solid transparent; display: table; margin: 0 auto; text-align: center; background-color: transparent; position: relative; }
 .table .tbody .select { position: relative; }
 .table .tbody .select .arw { width: 5px; height: 5px; display: block; border-width: 0 2px 2px 0; border-style: solid; border-color: #ccc; position: absolute; right: 25px; top: 12px; transform: rotate(45deg); }
 /*.table .tbody input[type="checkbox"] { width: 20px; float: left; margin: 5px 30px 0 0; }*/
@@ -225,7 +225,7 @@ label.file { width: 170px; height: 50px; border: 1px solid #07a8c2; display: blo
 label.file span { position: absolute; font-size: 13px; color: #07a8c2; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); white-space: nowrap; text-transform: uppercase; }
 label.file input { position: absolute; padding-top: 180px; cursor: pointer; }
 
-.btn-default { padding: 15px 50px; background-color: #07a8c2; text-align: center; display: table; margin: 0 auto; border: none; text-transform: uppercase; color: white; font-size: 13px; letter-spacing: .1em; cursor: pointer; text-decoration: none; }
+.btn-default { padding: 15px 50px; background-color: #07a8c2; text-align: center; display: table; margin: 0 auto; border: none; text-transform: uppercase; color: white; font-size: 13px; letter-spacing: .1em; cursor: pointer; text-decoration: none; font-weight: bold; }
 .btn-default:hover { text-decoration: none; }
 
 .box-add { width: 325px; top: 45px; right: 60px; }
@@ -327,7 +327,7 @@ input.pass { text-transform: none !important; }
 .steps .step { width: calc(100% / 3 - 1px); box-sizing: border-box; display: table; padding: 30px; float: left; border-right: 1px solid rgba(0,0,0,.1); text-align: center; }
 .steps .step:last-child { border: 0; }
 .steps .step h3 { float: right; font-size: 15px; }
-.steps .step .ctp { width: 100%; display: inline-block; margin-top: 20px; }
+.steps .step .ctp { width: 100%; display: inline-block; margin-top: 50px; }
 
 .numberStp { height: 60px; float: left; overflow: hidden; }
 .numberStp ._n { font-size: 110px; line-height: 81px; color: rgba(0,0,0,.02); font-weight: bold; }
@@ -339,7 +339,7 @@ input.pass { text-transform: none !important; }
 
 .cat { width: 80px; margin: 30px auto; }
 
-.nastl { margin-top: 100px; }
+.nastl { margin-top: 25px; }
 
 .scenter { margin: 50px auto 0; display: table; }
 
@@ -353,20 +353,22 @@ input.pass { text-transform: none !important; }
 .sidebar .bow { width: 100%; padding: 35px; border: 1px solid rgba(0,0,0,.09); margin-bottom: 50px; }
 .sidebar .bow:last-child { margin-bottom: 0; }
 .sidebar .bow .formBow { margin-top: 30px; }
-.sidebar .bow .formBow input[type="text"] { padding: 10px; background-color: rgba(255,255,255,.2); font-size: 12px; }
+.sidebar .bow .formBow input[type="text"] { padding: 10px; background-color: rgba(255,255,255,.2); font-size: 15px; }
 
-select { width: 70%; padding: 6px; box-sizing: border-box; text-transform: uppercase; font-size: 12px; color: #576660; border: 1px solid transparent; display: table; margin: 0 auto; text-align: center; background-color: transparent; position: relative; }
+select { width: 80%; padding: 6px; box-sizing: border-box; text-transform: uppercase; font-size: 12px; color: #576660; border: 1px solid transparent; display: table; margin: 0 auto; text-align: center; background-color: transparent; position: relative; }
 
 #video { position: absolute; top: 40px; left: 40px; }
 
-.filter { width: 280px; display: table; }
+.filter { width: 100%; display: table; }
 .filter span { float: left; }
-.filter .select { margin-left: 75px; }
+.filter ._in8 { float: left; margin-right: 12px; transform: translate(0, 4px); }
 .filter .period { width: 600px; display: table; }
-.filter .period input { width: 200px; float: left; background-color: white; padding: 5px 10px; }
+.filter input[type="text"], .filter input[type="date"] { width: 200px; float: left; background-color: white; padding: 5px 10px; }
 .filter .period > span { display: inline-block; margin: 0 15px; }
+.filter .call { text-transform: uppercase; font-size: 13px; font-weight: bold; margin-bottom: 10px; }
+.filter .rate { float: left; margin-right: 40px; }
 
-.select { width: 200px; position: relative; background-color: white; border-bottom: 1px solid #ccc; }
+.select { width: 200px; position: relative; background-color: white; border: 1px solid #ccc; }
 .select .arw { width: 5px; height: 5px; display: block; border-width: 0 2px 2px 0; border-style: solid; border-color: #ccc; position: absolute; right: 25px; top: 12px; transform: rotate(45deg); }
 
 .linemn { width: 100%; display: table; margin-bottom: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(0,0,0,.05); }
@@ -383,7 +385,7 @@ select { width: 70%; padding: 6px; box-sizing: border-box; text-transform: upper
 #overview ul { width: 100%; display: table; margin: 40px 0; }
 #overview ul li { float: left; margin-right: 20px; }
 #overview ul li:last-child { margin-right: 0; }
-#overview ul li a { text-decoration: none; text-transform: uppercase; font-size: 12px; padding: 5px 10px; border: 1px solid rgba(0,0,0,.08); transition: all .3s ease 0s; }
+#overview ul li a { text-decoration: none; text-transform: uppercase; font-size: 12px; padding: 5px 10px; border: 1px solid rgba(0,0,0,.08); transition: all .3s ease 0s; font-weight: bold; }
 #overview ul li a:hover { background-color: #07a8c2; color: white; }
 
 .mn { font-size: 22px; font-weight: bold; color: #07a8c2; }
@@ -457,3 +459,7 @@ select { width: 70%; padding: 6px; box-sizing: border-box; text-transform: upper
 .pMap .pm5 { top: 430px; left: 390px; }
 
 .pC10 { height: 390px; overflow: hidden; }
+
+.fields { margin-top: 30px; }
+.fields input { margin-bottom: 30px; }
+.fields input:last-child { margin-bottom: 0; }

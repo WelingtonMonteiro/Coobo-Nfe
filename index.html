@@ -23,8 +23,8 @@
 <body>
 
 <header>
-    <img src="./img/logo.png" alt="" class="logo">
-    <div class="slogan">Spend Invoice Management (SIM)</div>
+    <img width="280px" src="./img/logo.svg" alt="" class="logo">
+    <div class="slogan">Spend View</div>
 
     <div id="hamb">
         <span></span>
@@ -123,17 +123,46 @@
 <section id="inner">
 
     <div class="full">
+
+
+
+
+
         <div class="filter">
-            <span>Filtar por: </span>
-            <div class="select">
-                <select id="">
-                    <option value="" selected>Escolha uma opção</option>
-                    <option value="">Material</option>
-                    <option value="">Serviço</option>
-                    <option value="">Transporte</option>
-                </select>
+            <div class="call">Filtrar por:</div>
+            <div class="rate">
+                <div class="_in8">Período: </div>
+                <input type="date">
+            </div>
+            <div class="rate">
+                <div class="_in8">Tipo do Documento: </div>
+                <div class="select l-float">
+                    <select id="">
+                        <option value="" selected>Escolha uma opção</option>
+                        <option value="">Nota de Entrada</option>
+                        <option value="">Nota de Saída</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rate">
+                <div class="_in8">Tipo de NFe: </div>
+                <div class="select l-float">
+                    <select id="">
+                        <option value="" selected>Escolha uma opção</option>
+                        <option value="">Material</option>
+                        <option value="">Serviço</option>
+                        <option value="">Transporte</option>
+                    </select>
+                </div>
             </div>
         </div>
+
+
+
+
+
+
+
     </div>
 
     <div class="paperdr">
@@ -167,7 +196,7 @@
             </div>
             <div class="monetary">
                 <div class="mntlt">
-                    <h4>NF em quarentena</h4>
+                    <h4>Total de Destinatários</h4>
                 </div>
                 <div class="mn">20.000</div>
             </div>
@@ -190,12 +219,12 @@
         <div id="overview">
             <h4>Visão de Gastos</h4>
             <ul>
-                <li><a href="#">Gerencial</a></li>
-                <li><a href="#">Remetente</a></li>
-                <li><a href="#">Destinatário</a></li>
-                <li><a href="#">Localidades</a></li>
-                <li><a href="#">Tributos</a></li>
-                <li><a href="#">Transporte</a></li>
+                <li><a href="gerencial.html">Gerencial</a></li>
+                <li><a href="remetente.html">Remetente</a></li>
+                <li><a href="destinatario.html">Destinatário</a></li>
+                <li><a href="localidades.html">Localidades</a></li>
+                <li><a href="tributos.html">Tributos</a></li>
+                <li><a href="transporte.html">Transporte</a></li>
             </ul>
         </div>
     </div>
@@ -205,11 +234,7 @@
             <h4>Buscar Nota Fiscal</h4>
 
             <div class="formBow">
-                <input type="text" placeholder="Chave Nota Fiscal">
-                <input type="text" placeholder="Item">
-                <input type="text" placeholder="Emitente">
-                <input type="text" placeholder="Destinatário">
-                <input type="text" placeholder="Busca Geral">
+                <input type="text" placeholder="Ex.: Produto, remetente, código...">
                 <input type="submit" value="Buscar" class="btn-default">
             </div>
         </div>

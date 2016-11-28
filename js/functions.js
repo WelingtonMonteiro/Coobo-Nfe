@@ -18,8 +18,13 @@
     $('nav#main').height(hDoc - 93);
 
     //HAMBURGUER ACTION
-    $('#hamb').on('click', function() {
+    $('#hamb').on('click', function(e) {
         $('nav#main').toggleClass('open');
+        e.stopPropagation();
+    });
+
+     $('#main').on('click', function(e) {
+        e.stopPropagation();
     });
 
     //SUBMENU
@@ -71,6 +76,7 @@
 
     $(document).on('click', function() {
         $('.ap').removeClass('ap')
+        $('#main').removeAttr('class')
     });
 
     $('.littlebox').on('click', function(e) {
