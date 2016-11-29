@@ -28,7 +28,7 @@ form { width: 100%; }
 input[type="text"], input[type="password"], input[type="email"], input[type="date"], textarea, select { width: 100%; padding: 15px; box-sizing: border-box; background-color: #f7f8f9; border: 1px solid #ccc; margin-bottom: 15px; font-family: 'Catamaran', sans-serif; font-size: 14px; color: #576660; -webkit-appearance: none; -moz-appearance: none; appearance: none; border-radius: 0px; box-sizing: border-box; }
 form .field-wrap { width: 100%; }
 .half input, .half select { width: 49%; }
-.half input[type="radio"] { width: 25px; float: left; }
+.half input[type="radio"] { width: 25px; float: left; transform: translate(0, 5px); -moz-transform: translate(0, 5px); -wevkit-transform: translate(0, 5px); -o-transform: translate(0, 5px); -ms-transform: translate(0, 5px); }
 .half ul { margin-top: 20px; }
 
 .btBox { display: table; margin: 0 auto; }
